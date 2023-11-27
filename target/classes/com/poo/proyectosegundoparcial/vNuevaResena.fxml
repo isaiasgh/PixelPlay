@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #392B58;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.poo.proyectosegundoparcial.vNuevaResenaController">
+   <children>
+      <Text fx:id="tNombre" fill="#c880b7" layoutX="406.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" wrappingWidth="376.6177062988281">
+         <font>
+            <Font name="Gill Sans" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#c880b7" layoutX="35.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expresa tu pasión por los juegos en PixelPlay: " wrappingWidth="559.678955078125">
+         <font>
+            <Font name="Gill Sans" size="28.0" />
+         </font>
+      </Text>
+      <Text fill="#c880b7" layoutX="32.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¡Escribe tu reseña y comparte tu opinión con la comunidad!" wrappingWidth="707.0279846191406">
+         <font>
+            <Font name="Gill Sans" size="28.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="47.0" layoutY="140.0" prefHeight="413.0" prefWidth="271.0" style="-fx-background-color: #D6EEFF; -fx-background-radius: 20;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="413.0" prefWidth="271.0">
+               <children>
+                  <ImageView fx:id="portadaVideojuego" fitHeight="240.0" fitWidth="193.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <TextArea fx:id="fResena" layoutX="396.0" layoutY="239.0" prefHeight="135.0" prefWidth="347.0" promptText="Escribe aquí tu reseña" styleClass="text-area" stylesheets="@estilos.css" wrapText="true">
+         <font>
+            <Font name="Gill Sans" size="16.0" />
+         </font>
+      </TextArea>
+      <Text fx:id="tDesarrollador" fill="#c880b7" layoutX="406.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" wrappingWidth="357.1484698754454">
+         <font>
+            <Font name="Gill Sans" size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="bAggResena" layoutX="120.0" layoutY="534.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" styleClass="btn" stylesheets="@estilos.css" text="Agregar Reseña">
+         <font>
+            <Font name="Gill Sans" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ScrollPane fx:id="scrollPane" layoutX="395.0" layoutY="395.0" prefHeight="171.0" prefWidth="348.0" style="-fx-background-color: trasnparent;" styleClass="scroll-bar" stylesheets="@estilos.css">
+         <content>
+            <VBox fx:id="contenedorVbox" alignment="CENTER" prefHeight="169.0" prefWidth="346.0" spacing="25.0" style="-fx-background-color: #503D7B; -fx-border-width: 0;">
+               <padding>
+                  <Insets bottom="10.0" left="15.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <ImageView fx:id="Regresar" fitHeight="65.0" fitWidth="65.0" layoutX="721.0" layoutY="17.0">
+         <image>
+            <Image url="@Regresar2.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

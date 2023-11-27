@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="587.0" prefWidth="800.0" style="-fx-background-color: #392B58;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.poo.proyectosegundoparcial.vAgregarVideojuego">
+   <children>
+      <TextField fx:id="fCod" layoutX="243.0" layoutY="280.0" prefHeight="28.0" prefWidth="193.0" promptText="código descuento (opcional)" style="-fx-background-color: transparent; -fx-border-width: 0 0 2.5 0; -fx-border-color: #c880b7;" styleClass="textField" stylesheets="@estilos.css">
+         <font>
+            <Font name="Gill Sans" size="14.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="364.0" fitWidth="355.0" layoutX="-54.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@programadorpixelart.png" />
+         </image>
+      </ImageView>
+      <Text fill="#c880b7" layoutX="29.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Los pixeles nos esperan" wrappingWidth="296.03924560546875">
+         <font>
+            <Font name="Gill Sans" size="28.0" />
+         </font>
+      </Text>
+      <Text fill="#c880b7" layoutX="29.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Agreguemos magia al universo de los videojuegos" wrappingWidth="576.6105041503906">
+         <font>
+            <Font name="Gill Sans" size="28.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="64.0" fitWidth="48.0" layoutX="720.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pixelworld.png" />
+         </image>
+      </ImageView>
+      <Text fill="#c880b7" layoutX="30.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Completa la siguiente información" wrappingWidth="296.03924560546875">
+         <font>
+            <Font name="Gill Sans" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="fNombre" layoutX="31.0" layoutY="154.0" prefHeight="28.0" prefWidth="406.0" promptText="nombre*" style="-fx-background-color: transparent; -fx-border-width: 0 0 2.5 0; -fx-border-color: #c880b7;" styleClass="textField" stylesheets="@estilos.css">
+         <font>
+            <Font name="Gill Sans" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="fPrecio" layoutX="244.0" layoutY="218.0" prefHeight="28.0" prefWidth="193.0" promptText="precio*" style="-fx-background-color: transparent; -fx-border-width: 0 0 2.5 0; -fx-border-color: #c880b7;" styleClass="textField" stylesheets="@estilos.css">
+         <font>
+            <Font name="Gill Sans" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="fPorcentaje" layoutX="244.0" layoutY="333.0" prefHeight="28.0" prefWidth="193.0" promptText="\% de descuento (opcional)" style="-fx-background-color: transparent; -fx-border-width: 0 0 2.5 0; -fx-border-color: #c880b7;" styleClass="textField" stylesheets="@estilos.css">
+         <font>
+            <Font name="Gill Sans" size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="bElegirPortada" layoutX="283.0" layoutY="393.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="113.0" style="-fx-background-radius: 10;" styleClass="btn" stylesheets="@estilos.css" text="Elegir Portada" textFill="#392b58">
+         <font>
+            <Font name="Gill Sans" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <AnchorPane layoutX="497.0" layoutY="97.0" prefHeight="413.0" prefWidth="271.0" style="-fx-background-color: #D6EEFF; -fx-background-radius: 20;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="413.0" prefWidth="271.0">
+               <children>
+                  <ImageView fx:id="portadaVideojuego" fitHeight="240.0" fitWidth="193.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@castle.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children></AnchorPane>
+      <Button fx:id="bAgregar" layoutX="283.0" layoutY="452.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="113.0" style="-fx-background-radius: 10;" styleClass="btn" stylesheets="@estilos.css" text="Publicar" textFill="#392b58">
+         <font>
+            <Font name="Gill Sans" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ComboBox fx:id="cbCat" layoutX="25.0" layoutY="220.0" prefHeight="26.0" prefWidth="210.0" promptText="categoría*" style="-fx-border-width: 0 0 2.5 0; -fx-background-color: transparent; -fx-border-color: #c880b7;" styleClass="comboCat" stylesheets="@estilos.css" />
+      <ImageView fx:id="Regresar" fitHeight="65.0" fitWidth="65.0" layoutX="703.0" layoutY="518.0">
+         <image>
+            <Image url="@Regresar2.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #392B58;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.poo.proyectosegundoparcial.vMiBibliotecaController">
+   <children>
+      <Button fx:id="bRegresar" layoutX="65.0" layoutY="356.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="176.0" styleClass="btn" stylesheets="@estilos.css" text="Regresar" textFill="#392b58">
+         <font>
+            <Font name="Gill Sans" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fill="#c880b7" layoutX="160.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PixelPlay" wrappingWidth="251.85027585296268">
+         <font>
+            <Font name="Pixelade" size="64.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="89.0" fitWidth="94.0" layoutX="49.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="bResenas" layoutX="65.0" layoutY="239.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="176.0" styleClass="btn" stylesheets="@estilos.css" text="Escribir una reseña" textFill="#392b58">
+         <font>
+            <Font name="Gill Sans" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="tNombreVg" fill="#c880b7" layoutX="64.0" layoutY="547.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleccionado: ">
+         <font>
+            <Font name="Gill Sans" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="tDesarrollador" fill="#c880b7" layoutX="64.0" layoutY="585.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Desarrollador: ">
+         <font>
+            <Font name="Gill Sans" size="24.0" />
+         </font>
+      </Text>
+      <ScrollPane fx:id="scrollPane" layoutX="520.0" layoutY="160.0" prefHeight="524.0" prefWidth="738.0" style="-fx-background-color: trasnparent;" styleClass="scroll-bar" stylesheets="@estilos.css">
+         <content>
+            <VBox fx:id="contenedorHbox" alignment="TOP_CENTER" prefHeight="522.0" prefWidth="736.0" spacing="25.0" style="-fx-background-color: #392B58; -fx-border-width: 0;">
+               <padding>
+                  <Insets bottom="10.0" left="15.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <Text fx:id="tNombreVg1" fill="#c880b7" layoutX="528.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mi Biblioteca">
+         <font>
+            <Font name="Pixelade" size="64.0" />
+         </font>
+      </Text>
+      <HBox alignment="CENTER" layoutX="1016.0" layoutY="69.0" prefHeight="38.0" prefWidth="124.0" style="-fx-border-color: #C880B7; -fx-border-width: 1.5; -fx-border-radius: 10;">
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+         <children>
+            <Text fx:id="tWallet" fill="#c880b7" strokeType="OUTSIDE" strokeWidth="0.0" text="\$" wrappingWidth="150.12013481616214">
+               <font>
+                  <Font name="Gill Sans" size="23.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

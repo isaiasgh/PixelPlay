@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #392B58;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.poo.proyectosegundoparcial.vIniciarSesion">
+   <children>
+      <AnchorPane layoutX="261.0" prefHeight="600.0" prefWidth="541.0" style="-fx-background-color: #392B58;">
+         <children>
+            <Button fx:id="bIniciarSesion" layoutX="193.0" layoutY="369.0" mnemonicParsing="false" onMouseClicked="#iniciarSesion" prefHeight="34.0" prefWidth="135.0" style="-fx-background-color: #c880b7; -fx-background-radius: 10;" text="Iniciar Sesión" textFill="#392b58">
+               <font>
+                  <Font name="Gill Sans" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <TextField fx:id="fUsuario" alignment="CENTER" layoutX="164.0" layoutY="257.0" prefHeight="33.0" prefWidth="190.0" promptText="usuario/e-mail" style="-fx-border-color: #C880B7; -fx-background-color: transparent; -fx-border-width: 0 0 2.5 0;" styleClass="textField" stylesheets="@estilos.css">
+               <font>
+                  <Font name="Gill Sans" size="15.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="fPassword" alignment="CENTER" layoutX="163.0" layoutY="291.0" prefHeight="33.0" prefWidth="192.0" promptText="password" style="-fx-background-color: none; -fx-border-color: #C880B7; -fx-border-width: 0 0 2.5 0;" styleClass="textField" stylesheets="@estilos.css">
+               <font>
+                  <Font name="Gill Sans" size="15.0" />
+               </font>
+            </PasswordField>
+            <Text fx:id="tBienvenido" fill="#c880b7" layoutX="109.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¡Bienvenido de vuelta!" textAlignment="CENTER">
+               <font>
+                  <Font name="Gill Sans" size="34.0" />
+               </font>
+            </Text>
+            <Text fx:id="tTexto" fill="#c880b7" layoutX="67.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Por favor, completa los datos" textAlignment="CENTER" wrappingWidth="388.7619293068314">
+               <font>
+                  <Font name="Gill Sans" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="fRestablecerP" fill="#c880b7" layoutX="200.0" layoutY="339.0" onMouseClicked="#restablecerP" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Olvidaste la contraseña?" textAlignment="CENTER" wrappingWidth="173.47909879645135">
+               <font>
+                  <Font name="Gill Sans" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+            <Text fx:id="fCrearCuenta" fill="#c880b7" layoutX="158.0" layoutY="463.0" onMouseClicked="#vCrearCuenta" strokeType="OUTSIDE" strokeWidth="0.0" text="¿No tienes una cuenta? Crea una" textAlignment="CENTER" wrappingWidth="200.9121432300451">
+               <font>
+                  <Font name="Gill Sans" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+         </children></AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="12.0" prefHeight="577.0" prefWidth="247.0" style="-fx-background-color: #4F7CAC; -fx-background-radius: 20;">
+         <children>
+            <Text fx:id="titPixelPlay" fill="#392b58" layoutX="39.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="fuentePersonalizada" text="PixelPlay" textAlignment="CENTER">
+               <font>
+                  <Font name="Pixelade" size="65.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="miLogo" fitHeight="184.0" fitWidth="192.0" layoutX="40.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image></ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #392B58;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.poo.proyectosegundoparcial.vCrearCuenta">
+   <children>
+      <AnchorPane layoutX="468.0" layoutY="14.0" prefHeight="562.0" prefWidth="318.0" style="-fx-background-color: #D6EEFF; -fx-background-radius: 20;">
+         <children>
+            <ImageView fx:id="imagenCrearC" fitHeight="461.0" fitWidth="313.0" layoutX="3.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@bannerCCuenta.png" />
+               </image></ImageView>
+         </children></AnchorPane>
+      <Text fill="#c880b7" layoutX="35.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Únete a la revolución gaming en PixelPlay: ¡10,000 jugadores y contando!" wrappingWidth="327.11572265625">
+         <font>
+            <Font name="Gill Sans" size="23.0" />
+         </font>
+      </Text>
+      <Text fill="#c880b7" layoutX="35.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Empezemos llenando esta información">
+         <font>
+            <Font name="Gill Sans" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="fcNombreApellido" layoutX="33.0" layoutY="200.0" prefHeight="28.0" prefWidth="281.0" style="-fx-border-color: #c880b7; -fx-border-width: 0 0 2.5 0; -fx-background-color: none;" styleClass="textField" stylesheets="@estilos.css">
+         <font>
+            <Font name="Gill Sans" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="fcEmail" layoutX="35.0" layoutY="259.0" prefHeight="28.0" prefWidth="281.0" style="-fx-border-color: #c880b7; -fx-background-color: none; -fx-border-width: 0 0 2.5 0;" styleClass="textField" stylesheets="@estilos.css">
+         <font>
+            <Font name="Gill Sans" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="fcUsername" layoutX="35.0" layoutY="318.0" prefHeight="28.0" prefWidth="281.0" style="-fx-border-color: #c880b7; -fx-background-color: none; -fx-border-width: 0 0 2.5 0;" styleClass="textField" stylesheets="@estilos.css">
+         <font>
+            <Font name="Gill Sans" size="14.0" />
+         </font></TextField>
+      <Text fill="#c880b7" layoutX="35.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre y Apellido">
+         <font>
+            <Font name="Gill Sans" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#c880b7" layoutX="35.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail">
+         <font>
+            <Font name="Gill Sans" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#c880b7" layoutX="35.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="username">
+         <font>
+            <Font name="Gill Sans" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#c880b7" layoutX="35.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="password">
+         <font>
+            <Font name="Gill Sans" size="14.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="cbDesarrollador" layoutX="34.0" layoutY="432.0" mnemonicParsing="false" style="-fx-border-width: 10 10 10 10;" text="Quiero ser desarrollador" textFill="#c880b7">
+         <font>
+            <Font name="Gill Sans" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <PasswordField fx:id="fcPassword" layoutX="35.0" layoutY="376.0" prefHeight="26.0" prefWidth="281.0" style="-fx-background-color: none; -fx-border-color: #c880b7; -fx-border-width: 0 0 2.5 0;" styleClass="textField" stylesheets="@estilos.css">
+         <font>
+            <Font name="Gill Sans" size="14.0" />
+         </font></PasswordField>
+      <CheckBox fx:id="cbAceptoT" layoutX="34.0" layoutY="458.0" mnemonicParsing="false" style="-fx-border-width: 10 10 10 10;" text="Acepto los" textFill="#c880b7">
+         <font>
+            <Font name="Gill Sans" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <Text fill="#d6eeff" layoutX="125.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="términos" wrappingWidth="53.89668273925781">
+         <font>
+            <Font name="Gill Sans" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#c880b7" layoutX="180.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="y">
+         <font>
+            <Font name="Gill Sans" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#d6eeff" layoutX="190.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="condiciones" wrappingWidth="80.07425203822902">
+         <font>
+            <Font name="Gill Sans" size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="bcrearCuenta" layoutX="28.0" layoutY="506.0" mnemonicParsing="false" onMouseClicked="#crearCuenta" prefHeight="26.0" prefWidth="304.0" style="-fx-border-color: none; -fx-background-color: #C880B7; -fx-background-radius: 10;" text="Crear cuenta" textFill="#392b58">
+         <font>
+            <Font name="Gill Sans" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="tIniciarSesion" fill="#c880b7" layoutX="35.0" layoutY="564.0" onMouseClicked="#ventanaIniciarSesion" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Ya tienes una cuenta? Inicia sesión">
+         <font>
+            <Font name="Gill Sans" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #392B58;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.poo.proyectosegundoparcial.VInterfazUsuario">
+   <children>
+      <AnchorPane layoutX="941.0" layoutY="268.0" prefHeight="377.0" prefWidth="282.0" style="-fx-background-color: #C880B7; -fx-background-radius: 15;">
+         <children>
+            <Text fill="#392b58" layoutX="52.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Top Videojuegos" textAlignment="CENTER" wrappingWidth="162.5694580078125">
+               <font>
+                  <Font name="Gill Sans" size="22.0" />
+               </font>
+            </Text>
+            <Text fill="#392b58" layoutX="26.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre">
+               <font>
+                  <Font name="Gill Sans" size="22.0" />
+               </font>
+            </Text>
+            <Text fill="#392b58" layoutX="170.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descargas">
+               <font>
+                  <Font name="Gill Sans" size="22.0" />
+               </font>
+            </Text>
+            <Text fx:id="tVideogamesTop" fill="#392b58" layoutX="26.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.">
+               <font>
+                  <Font name="Gill Sans" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="tDescargasTop" fill="#392b58" layoutX="234.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text=".">
+               <font>
+                  <Font name="Gill Sans" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Button fx:id="bSocial" contentDisplay="CENTER" layoutX="141.0" layoutY="292.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="203.0" style="-fx-background-color: transparent;" styleClass="buttonMenu" stylesheets="@estilos.css" text="Social" textAlignment="CENTER" textFill="#c880b7">
+         <font>
+            <Font name="Gill Sans" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="bWallet" contentDisplay="CENTER" layoutX="141.0" layoutY="388.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="203.0" style="-fx-background-color: transparent;" styleClass="buttonMenu" stylesheets="@estilos.css" text="Wallet" textAlignment="CENTER" textFill="#c880b7">
+         <font>
+            <Font name="Gill Sans" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fill="#c880b7" layoutX="140.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PixelPlay" wrappingWidth="251.85027585296268">
+         <font>
+            <Font name="Pixelade" size="64.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="89.0" fitWidth="94.0" layoutX="29.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="bMiBilbioteca" contentDisplay="CENTER" layoutX="140.0" layoutY="482.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="203.0" style="-fx-background-color: transparent;" styleClass="buttonMenu" stylesheets="@estilos.css" text="Mi Biblioteca" textAlignment="CENTER" textFill="#c880b7">
+         <font>
+            <Font name="Gill Sans" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="bCerrarSesion" contentDisplay="CENTER" layoutX="140.0" layoutY="575.0" mnemonicParsing="false" onAction="#cerrarSesion" prefHeight="52.0" prefWidth="203.0" style="-fx-background-color: transparent;" styleClass="buttonMenu" stylesheets="@estilos.css" text="Cerrar Sesión" textAlignment="CENTER" textFill="#c880b7">
+         <font>
+            <Font name="Gill Sans" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="bMenuDev" contentDisplay="CENTER" layoutX="979.0" layoutY="152.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="203.0" style="-fx-background-color: transparent;" styleClass="buttonMenu" stylesheets="@estilos.css" text="Menú Dev" textAlignment="CENTER" textFill="#c880b7">
+         <font>
+            <Font name="Gill Sans" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="bInventario" contentDisplay="CENTER" layoutX="141.0" layoutY="195.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="203.0" style="-fx-background-color: transparent;" styleClass="buttonMenu" stylesheets="@estilos.css" text="Inventario" textAlignment="CENTER" textFill="#c880b7">
+         <font>
+            <Font name="Gill Sans" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="tBienvenida" fill="#c880b7" layoutX="413.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenido @isaias">
+         <font>
+            <Font name="PIXELADE" size="45.0" />
+         </font>
+      </Text>
+      <HBox alignment="CENTER" layoutX="1006.0" layoutY="59.0" prefHeight="38.0" prefWidth="124.0" style="-fx-border-color: #C880B7; -fx-border-width: 1.5; -fx-border-radius: 10;">
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+         <children>
+            <Text fx:id="tWallet" fill="#c880b7" strokeType="OUTSIDE" strokeWidth="0.0" text="\$" wrappingWidth="150.12013481616214">
+               <font>
+                  <Font name="Gill Sans" size="23.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #392B58;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.poo.proyectosegundoparcial.vCodigos">
+   <children>
+      <Text fx:id="tNombreVg" fill="#c880b7" layoutX="44.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre Videojuego">
+         <font>
+            <Font name="Gill Sans" size="28.0" />
+         </font>
+      </Text>
+      <Text fx:id="tTitulo" fill="#c880b7" layoutX="44.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Impulsa tus ventas con códigos personalizados" wrappingWidth="347.9913024902344">
+         <font>
+            <Font name="Gill Sans" size="36.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="456.0" layoutY="20.0" prefHeight="562.0" prefWidth="318.0" style="-fx-background-color: #D6EEFF; -fx-background-radius: 20;">
+         <children>
+            <HBox alignment="CENTER" layoutX="40.0" layoutY="61.0" prefHeight="434.0" prefWidth="254.0">
+               <children>
+                  <ImageView fx:id="portadaVg" fitHeight="383.0" fitWidth="221.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="fCodigo" layoutX="48.0" layoutY="185.0" prefHeight="26.0" prefWidth="300.0" promptText="código" styleClass="textField" stylesheets="@estilos.css">
+         <font>
+            <Font name="Gill Sans" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="fDescuento" layoutX="50.0" layoutY="252.0" prefHeight="26.0" prefWidth="300.0" promptText="\% de descuento" styleClass="textField" stylesheets="@estilos.css">
+         <font>
+            <Font name="Gill Sans" size="14.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="tablaCodigos" layoutX="38.0" layoutY="318.0" prefHeight="160.0" prefWidth="324.0">
+        <columns>
+          <TableColumn fx:id="colCod" prefWidth="156.73667526245117" text="Código" />
+          <TableColumn fx:id="colDescuento" prefWidth="165.26332092285156" text="\% de descuento" />
+        </columns>
+      </TableView>
+      <Button fx:id="bAgregarCod" layoutX="38.0" layoutY="514.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="110.0" styleClass="btn" stylesheets="@estilos.css" text="Agregar Código" textFill="#392b58">
+         <font>
+            <Font name="Gill Sans" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="bEliminarCod" layoutX="163.0" layoutY="515.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="110.0" styleClass="btn" stylesheets="@estilos.css" text="Eliminar Código" textFill="#392b58">
+         <font>
+            <Font name="Gill Sans" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="Regresar" fitHeight="58.0" fitWidth="56.0" layoutX="296.0" layoutY="502.0">
+         <image>
+            <Image url="@Regresar2.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

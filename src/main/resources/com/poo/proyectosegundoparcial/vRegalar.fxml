@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #392B58;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.poo.proyectosegundoparcial.vRegalarController">
+   <children>
+      <AnchorPane layoutX="57.0" layoutY="150.0" prefHeight="413.0" prefWidth="271.0" style="-fx-background-color: #D6EEFF; -fx-background-radius: 20;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="413.0" prefWidth="271.0">
+               <children>
+                  <ImageView fx:id="portadaVideojuego" fitHeight="240.0" fitWidth="193.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <Text fill="#c880b7" layoutX="44.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comparte la emoción de jugar. Regala sonrisas con PixelPlay.&quot;" wrappingWidth="714.5322265625">
+         <font>
+            <Font name="Gill Sans" size="34.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tablaUsuarios" layoutX="375.0" layoutY="183.0" prefHeight="178.0" prefWidth="393.0">
+         <columns>
+            <TableColumn fx:id="colUsername" prefWidth="149.0697479248047" text="username" />
+            <TableColumn fx:id="colNombre" prefWidth="126.43022155761719" text="nombre" />
+            <TableColumn fx:id="colCorreo" prefWidth="116.51324462890625" text="e-mail" />
+         </columns>
+      </TableView>
+      <TextField fx:id="fUsuario" layoutX="416.0" layoutY="412.0" prefHeight="29.0" prefWidth="323.0" promptText="usuario" styleClass="textField" stylesheets="@estilos.css">
+         <font>
+            <Font name="Gill Sans" size="14.0" />
+         </font></TextField>
+      <Button fx:id="bRegalar" layoutX="511.0" layoutY="482.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="121.0" styleClass="btn" stylesheets="@estilos.css" text="Regalar" textFill="#392b58">
+         <font>
+            <Font name="Gill Sans" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="Regresar" fitHeight="80.0" fitWidth="80.0" layoutX="706.0" layoutY="506.0">
+         <image>
+            <Image url="@Regresar2.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #392B58; -fx-border-image-width: 0 0 0 0;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.poo.proyectosegundoparcial.vMisVideojuegos">
+   <children>
+      <ScrollPane fx:id="scrollPane" layoutX="-1.0" layoutY="123.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="484.0" prefWidth="386.0" style="-fx-background-color: #392B58;" styleClass="scroll-bar" stylesheets="@estilos.css">
+         <content>
+            <VBox fx:id="contImagesView" alignment="TOP_CENTER" prefHeight="482.0" prefWidth="384.0" spacing="20.0" style="-fx-background-color: #392B58;">
+               <padding>
+                  <Insets bottom="10.0" left="15.0" right="10.0" top="10.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <Text fill="#c880b7" layoutX="35.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mis Videojuegos">
+         <font>
+            <Font name="Gill Sans" size="32.0" />
+         </font>
+      </Text>
+      <Text fill="#c880b7" layoutX="38.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Para empezar selecciona uno de tus videojuegos">
+         <font>
+            <Font name="Gill Sans" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="bResena" layoutX="526.0" layoutY="221.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="168.0" style="-fx-background-radius: 10;" styleClass="btn" stylesheets="@estilos.css" text="Reseñas">
+         <font>
+            <Font name="Gill Sans" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="bCodigos" layoutX="526.0" layoutY="344.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="168.0" style="-fx-background-radius: 10;" styleClass="btn" stylesheets="@estilos.css" text="Códigos">
+         <font>
+            <Font name="Gill Sans" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="109.0" fitWidth="108.0" layoutX="557.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@videojuego.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="tVideojuegoSeleccionado" fill="#c880b7" layoutX="400.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ningún videojuego seleccionado">
+         <font>
+            <Font name="Gill Sans" size="24.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="Regresar" fitHeight="65.0" fitWidth="65.0" layoutX="694.0" layoutY="516.0">
+         <image>
+            <Image url="@Regresar2.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Text fx:id="tCodigos" fill="#c880b7" layoutX="400.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Gill Sans" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="tResenas" fill="#c880b7" layoutX="400.0" layoutY="525.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Gill Sans" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
