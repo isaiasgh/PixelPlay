@@ -1,3 +1,3 @@
 Créditos:
 @isaiasgh
-@dramirez (cuenta baneada 💀)
+@ders0214 
